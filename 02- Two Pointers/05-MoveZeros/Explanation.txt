@@ -1,0 +1,13 @@
+I used the Two Pointers pattern for this problem.
+
+The idea is;
+- First, copy all non-zero elements to the beginning of the array while preserving their relative order.
+- Second, make all the remaining elements in the array 0.
+
+There are two pointers: read and write.
+Write is holding the place where non-zero elements will be written
+When the read pointer encounters a non-zero element, I copy it to the position indicated by the write pointer and then increment the write pointer.
+After moving all the non-zero elements in the beginning of the array, then I'm making all the remaining elements 0.
+
+Time complexity is O(n) because the algorithm performs only linear passes (traversing the array from the beginning to the end once) over the array.
+Space complexity is O(1) because the algorithm uses constant amount of extra space regardless of the input size.
