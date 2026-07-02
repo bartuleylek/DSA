@@ -1,0 +1,12 @@
+I used the Two Pointers pattern for this problem.
+
+The idea is that there are two pointers: read and write.
+- The write pointer indicates the place where the unique elements will be written
+- The read pointer visits all the elements and we compare the value that read pointer points with the value write pointer points
+
+In an iteration, if the value that the read pointer points is not equal to the value the write pointer points,
+then I move the write pointer one position to the right and copy the value that the read pointer points here.
+At the end, I return write+1 because write variable is the index of the last unique value and for the number of unique values I need to just increase it by one.
+
+Time complexity is O(n) because there is only one loop in other words the algorithm performs only single linear pass (traversing the array from the beginning to the end once)
+Space complexity is O(1) because the algorithm uses only a constant amount of extra space regardless the input size.
