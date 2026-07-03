@@ -1,0 +1,9 @@
+I will use the Two Pointers pattern for this problem.
+
+The idea is that I will compare the valid elements in the each sorted arrays from right to left.
+After that I'll put the greater one to the last place of the first array. Then, I'll move the pointer that points to the greater element one position to the left.
+The algorithm will continue until no elements to iterate left in both arrays.
+At the end, I'll check if there are any elements left in the second array and if there are any, then I'll add them as well using while loop.
+
+Time complexity: O(m+n) where m and n are the size of the arrays because I visit all the elements in both arrays at most once.
+Space complexity is O(1) because the algorithm uses a constant amount of extra space regardless of the input size.
