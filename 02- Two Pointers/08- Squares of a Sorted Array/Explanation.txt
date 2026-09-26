@@ -1,0 +1,7 @@
+I used two pointers pattern for this problem.
+I compared the squares of the values that are pointed by the left (L) and the right pointers (R).
+If L is greater than or equal to R, then I put L on the last position of a new vector then moved L right by one and the position index of the new vector left by one.
+Else, I put R on the last position of a new vector then I moved R left by one and the position index of the new vector left by one.
+
+Time Complexity: O(n) because I only traversed the vector by one via two pointers.
+Space Complexity: O(n) because I used an additional amount of space that is equal to the size of the input vector which is n.
